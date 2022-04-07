@@ -1,0 +1,19 @@
+/** TCG Store
+Pokemon (2500)
+DBS (1200)
+Yugioh (900)
+Football (500)
+Basketball (400)
+**/
+
+CREATE TABLE TCG (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, price INTEGER, genre TEXT);
+
+Insert into TCG values(1,"Pokemon",2500,10, "anime");
+Insert into TCG values(2,"DBS",1200,12, "anime");
+Insert into TCG values(3,"Yugioh", 900, 10, "anime");
+Insert into TCG values(4,"Football", 500, 10, "sports");
+Insert into TCG values(5,"Basketball", 400, 10, "sports");
+
+Select * from TCG;
+
+Select * from TCG where price <12;
